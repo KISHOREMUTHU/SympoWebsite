@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>UPAGRAHA '22</title>
+    <link rel="shortcut icon" type="image" href="./IMAGES/logo.JPG" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <section class="main">
+      <div class="background"></div>
+      <nav class="nav">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./Images/logo_removed.png" alt="logo"
+          /></a>
+        </div>
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#about-us">About Us</a>
+          <a href="#">Our Events</a>
+          <a href="crew.html">Crew</a>
+          <a href="#contact-us">Contact Us</a>
+        </div>
+      </nav>
+      <video
+        src="./Images/video.mp4"
+        type="video/mp4"
+        autoplay
+        loop
+        muted
+        plays-inline
+        class="back-video"
+      ></video>
+      <div class="clg-container">
+        <div class="clg-content">
+          <img src="./Images/logo_removed.png" style="height: 14rem" />
+          <p style="font-size: 14px">Sri Venkateswara College of Engineering</p>
+          <p style="font-size: 12px">
+            Department of Electronics and Communication Engineering
+          </p>
+        </div>
+      </div>
+      <div class="location-container">
+        <div class="location">
+          <a href="https://goo.gl/maps/inFA71ec41VaKNmG6"
+            ><i class="ri-map-pin-2-fill"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="main-container">
+      <div class="container">
+        <!-- <div class="left">
+          <img
+            src="./IMAGES/abt.jpg"
+            alt=""
+            style="width: 35rem; height: 44rem"
+          />
+        </div>-->
+      </div>
+      <div class="side-container">
+        <div class="abt-head" id="about-us">
+          <h1>Upagraha '22</h1>
+        </div>
+      </div>
+      <div class="bottom-container">
+        <div class="abt-content">
+          <p>
+            The department of ECE of Sri Venkateswara College of Engineering is
+            proud to launch Its National level Tech Symposium, with the prime
+            focus of encouraging young tech enthusiasts to engage in vigorous
+            research and take engineering to a whole new level. Upagraha '22
+            will act as a platform to exchange ideas and scientific knowledge
+            through intense professional interaction. We believe this will lead
+            to an inocuum of utilitarian ideas in various fields, not restricted
+            to electronics!<br />
+            We welcome you to participate and highlight your talent in front of
+            eminent professors, industrial professionals, and talented students
+            in a formal environment.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="contact-container">
+        <div class="contact-content" id="contact-us">
+          <h1>Contact Us</h1>
+        </div>
+
+        <div class="right-container">
+          <div class="right-content1">
+            <div class="mobile1">
+              <i class="ri-phone-fill"></i>
+            </div>
+            <p>
+              88256 35679<br />
+              Krishna Priya S<br />
+              President
+            </p>
+          </div>
+          <div class="right-content2">
+            <div class="ping">
+              <i class="ri-map-pin-2-fill"></i>
+            </div>
+            <p>
+              ECE Department<br />
+              Sri Venkateswara College <br />of Engineering
+            </p>
+          </div>
+          <div class="right-content3">
+            <div class="mobile2">
+              <i class="ri-phone-fill"></i>
+            </div>
+            <p>
+              75500 88594<br />
+              Sanjay Lokesh A M<br />
+              Secretary
+            </p>
+          </div>
+          <div class="right-content4">
+            <div class="mail-logo">
+              <i class="ri-mail-fill"></i>
+            </div>
+            <p>svceraic@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      ScrollReveal({
+        reset: true,
+        distance: "60px",
+        duration: 2500,
+        delay: 400,
+      });
+
+      ScrollReveal().reveal(".clg-content, .location, .abt-head", {
+        delay: 500,
+        origin: "left",
+      });
+      ScrollReveal().reveal(
+        ".abt-content, .right-content1, .right-content2, .right-content3, .right-content4",
+        { delay: 600, origin: "bottom", interval: 100 }
+      );
+      ScrollReveal().reveal(".abt-content", {
+        delay: 1200,
+        origin: "bottom",
+        interval: 300,
+      });
+      ScrollReveal().reveal(".left", {
+        delay: 1000,
+        origin: "right",
+        interval: 100,
+      });
+      ScrollReveal().reveal(".contact-content", { delay: 500, origin: "top" });
+    </script>
+  </body>
+</html>
